@@ -1,0 +1,210 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kkk freelance</title>
+    <!-- link in font awesome cdn to insert social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navigation bar-->
+    <nav class="navbar">
+        <a href="#home" class="logo">KODEX STUDIO</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="auth-buttons">
+                <button class="auth-btn login-btn" id="loginBtn">Login</button>
+                <button class="auth-btn signup-btn" id="signupBtn">Sign Up</button>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- hero section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Full-stack Developer</h1>
+            <p>write what you want it's your choice this is the KKK freelance web page we make your website in best way. </p>
+            <p class="highlight">Specializing in modern web development and  cyber systems </p>
+            <a href="#contact" class="cta-button">let's connect</a>
+        </div>
+        <div class="hero-image">
+            <img src="KODEX.PNG" alt="profile" class="profile-img">
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about" class="about">
+        <h2>Technical experties</h2>
+        <div class="about-card">
+            <div class="about-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Frontend development</h3>
+                <p>React, Vue, HTML5, CSS3, Javascript</p>
+            </div>
+            <div class="about-card">
+                <i class="fa-solid fa-server"></i>
+                <h3>Backend development</h3>
+                <p>node.js, python, MangoDB, postgreSQL</p>
+            </div>
+            <div class="about-card">
+                <i class="fa-solid fa-paintbrush"></i>
+                <h3>UI/UX Design</h3>
+                <p>figma, AdobeXD, Prototyping, Usertesting</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- project section-->
+    <section id="projects" class="projects">
+        <h2>Project experience</h2>
+        <div class="projects-card">
+            <div class="about-card">
+                <i class="fa-solid fa-bars-progress"></i>
+                <h3>Project 1 </h3>
+                <p>React, Vue, HTML5, CSS3, Javascript</p>
+            </div>
+            <div class="projects-card">
+                <i class="fa-solid fa-diagram-project"></i>
+                <h3>Project 2</h3>
+                <p>node.js, python, MangoDB, postgreSQL</p>
+            </div>
+            <div class="projects-card">
+                <i class="fa-solid fa-blog"></i>
+                <h3>Project 3</h3>
+                <p>figma, AdobeXD, Prototyping, Usertesting</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section-->
+    <section id="contact" class="contact">
+        <h2>Help center</h2>
+        <div class="contact-card">
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>EMAIL</h3>
+                <p>Send message in:  kodexstudio@gmail.com</p>
+            </div>
+            <div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <h3>PHONE</h3>
+                <p>stay connected with </br>call: +251-919-059-818 </p>
+            </div>
+            <div class="contact-card">
+                <i class="fa-solid fa-photo-film"></i>
+                <h3>Social Media</h3>
+                <p>Tiktok: username.. </br>Telegram: username..</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section-->
+    <footer>
+        <p> &copy;2025 KKK Freelance . All Right Reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeLogin">&times;</span>
+            <h2 class="modal-title">Welcome Back</h2>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" class="form-control" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="#" id="switchToSignup">Sign up</a></p>
+                    <a href="#" class="text-sm text-gray-400 hover:text-accent">Forgot password?</a>
+                </div>
+
+                <div class="divider">
+                    <span class="divider-text">OR</span>
+                </div>
+
+                <div class="social-login">
+                    <div class="social-btn google-btn">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="social-btn facebook-btn">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="social-btn twitter-btn">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeSignup">&times;</span>
+            <h2 class="modal-title">Create Account</h2>
+
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" class="form-control" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupConfirm">Confirm Password</label>
+                    <input type="password" id="signupConfirm" class="form-control" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+
+                <div class="form-footer">
+                    <p>Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+                </div>
+
+                <div class="divider">
+                    <span class="divider-text">OR</span>
+                </div>
+
+                <div class="social-login">
+                    <div class="social-btn google-btn">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="social-btn facebook-btn">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="social-btn twitter-btn">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- link to java script -->
+    <script src="java.js"></script>
+</body>
+</html>
